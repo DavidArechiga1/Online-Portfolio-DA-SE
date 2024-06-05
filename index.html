@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- POPUP CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- POPUP JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+    integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
+    integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://fonts.cdnfonts.com/css/lovintime" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/chicken-fajitas" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/slimbots" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/controller.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <title>David Arechiga</title>
+</head>
+
+
+<body>
+  <video playsinline autoplay loop muted src="./assets/david1.mp4"></video> <!--BACKGROUND-->
+  </div>
+  <!--NAV-->
+  <header class="nav-bar">
+    <nav class="nav navbar navbar-expand-lg p-3 custom-navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav navbar-nav ms-auto">
+            <li class="nav-item px-4 py-2">
+              <a class="nav-link px-4 active" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item px-4 py-2">
+              <a class="nav-link px-4" href="#about">ABOUT ME</a>
+            </li>
+            <li class="nav-item px-4 py-2">
+              <a class="nav-link px-4" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item px-4 py-2">
+              <a class="nav-link px-4" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item px-4 py-2">
+              <a class="nav-link px-4" href="#portfolio">PORTFOLIO</a>
+            </li>
+
+            <li class="nav-item dropdown py-3 px-4">
+              <a class="nav-link dropdown-toggle px-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                CONTACT
+              </a>
+              <ul class="dropdown-menu px-4 py-2">
+                <li><a class="dropdown-item px-4 py-3 text-nav" href="#galery">GALERIA</a></li>
+                <li><a class="dropdown-item px-4 py-3 text-nav" href="#contact">CONTACT</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+            <!--<div id="idiomas" class="text-center px-5">
+              <button onclick="cambiarIdioma('es')"><img src="./assets/mx.svg" width="20px" class="img-fluid" alt="mx"></button>
+              <button onclick="cambiarIdioma('en')"><img src="./assets/um.svg" width="20px" class="img-fluid" alt="en"></button>
+            </div>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--HOME-->
+  <section class="home" id="home">
+    <div class="container-1">
+      <div class="container abs-center">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-home">David Arechiga</h1>
+            <h4 class="pt-5 text-home">Unity and Web<br>Developer</h4>
+          </div>
+          <div class="col">
+            <img src="./assets/david.png" alt="img" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT-->
+  <section class="about" id="about">
+    <div class="container-1">
+      <div class="container abs-center">
+        
+        <div class="row">
+          <div class="col-sm-12 col-md-6 about-col-2 text-white">
+            <div class="row p-1">
+              <div class="col-12 col-about text-center title">
+                <h1 >David Arechiga</h1>
+                <h5>DEVELOPER</h5>
+              </div>
+              <div class="col-12 col-about pt-3">
+                <h3>ABOUT ME</h3>
+                <p class="about-title">Engineer focused on process improvement through analytical programming tools and technology development. I have created, edited, and developed specific products for customers in the virtual, application, and installation sectors, facilitating and advising customers.
+                </p>
+                <h3>Trivia</h3>
+                <p class="about-title"><i class="bi bi-award-fill"></i>I was part of the Brigades team at my University.
+                  <br>
+                  <i class="bi bi-bank"></i>I am a volunteer in the development of VR equipment at the Caracol museum in Ensenada.
+                  <br>
+                  <i class="bi bi-book"></i>I am an active member of the Book Festival in Ensenada, LIBROFEST.
+                 </div>
+              <div class="col-12 col-about py-2">
+                <h4>PROJECTS</h4>
+                <div class="text-center h1" id="counter">0</div>
+                <h4>CLIENTS</h4>
+                <div class="text-center h1" id="counter2">0</div>
+              </div>
+              <!--<div class="col-12 col-about pt-3">
+                <button onclick="downloadPDF()" class="text-white cv">DOWNLOAD CV<i class="bi bi-download ps-3"></i></button>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 about-col-1 img-about">
+            <img src="./assets/img2.jpeg" alt="" class="img-fluid mb-2">
+            <img src="./assets/work.PNG" alt="" class="img-fluid mb-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+  <!--SKILLS-->
+  <section class="skills" id="skills">
+    <div class="container-1">
+      <div class="container">
+        <h1 class="text-center py-5 title-skills">SKILLS</h1>
+
+        <div class="row row-cols-2 row-cols-lg-4 text-center">
+
+          <div class=".d-none .d-xl-block content" id="popup" style="display:none;">
+            <!-<iframe src="./assets/efw.png" width="100%" height="100%" frameborder="0">
+            </iframe>->
+            <i id="close-popup" class="fa-solid fa-circle-xmark"></i>
+          </div>
+
+          <div class="col card-skill card-skill-2 popup text-white" id="open-popup">
+            <h1 class="pt-5"><i class="fa-brands fa-html5"></i></h1>
+            <p>HTML</p>
+          </div>
+
+          <div class="col card-skill card-skill-6 text-white">
+            <h1 class="pt-5"><i class="bi bi-unity"></i></h1>
+            <p>UNITY</p>
+            
+          </div>
+
+          <div class="col card-skill text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-sass"></i></h1>
+            <p>SASS</p>
+          </div>
+
+          <div class="col card-skill card-skill-1 text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-css3-alt"></i></h1>
+            <p>CSS</p>
+          </div>
+
+          <div class="col card-skill text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-js"></i></h1>
+            <p>JAVASCRIPT</p>
+          </div>
+
+          <div class="col card-skill text-white">
+            <h1 class="pt-5"><i class="bi bi-filetype-tsx fa-brands"></i></h1>
+            <p>TYPESCRIPT</p>
+          </div>
+
+          <div class="col card-skill text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-bootstrap"></i></h1>
+            <p>BOOTSTRAP</p>
+          </div>
+
+          <div class="col card-skill text-white">
+            <h1 class="pt-5"><i class="bi bi-filetype-tsx fa-brands"></i></h1>
+            <p>JQUERY</p>
+          </div>
+
+          <div class="col card-skill card-skill-3 text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-figma"></i></h1>
+            <p>FIGMA</p>
+          </div>
+
+          <div class="col card-skill text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-wordpress"></i></h1>
+            <p>WORDPRESS</p>
+          </div>
+
+          <div class="col card-skill card-skill-5 text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-react"></i></h1>
+            <p>REACT JS</p>
+          </div>
+
+          <div class="col card-skill card-skill-4 text-white">
+            <h1 class="pt-5"><i class="fa-brands fa-github"></i></h1>
+            <p>GITHUB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SERVICES-->
+  <section id="services">
+    <div class="container-1 py-5">
+      <div class="container">
+
+        <h1 class="text-center py-5 title-services">DIGITALE SERVICES</h1>
+        <div class="row">
+
+          <div class="col-4 title text-center pb-4">
+            <h2 class="title-serv">UNITY <br>& VIRTUAL</h2>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!--ACORDEON 1-->
+              <div class="accordion-item py-5">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h5 class="responsive-text" style="font-size:15px;">Augmented Reality</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Creation of Virtual Worlds.
+                  </div>
+                </div>
+              </div>
+              <!--ACORDEON 2-->
+              <div class="accordion-item pb-5">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <h5 class="responsive-text" style="font-size:15px;">Products 3D</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Development of 3D products, such as helmets or character accessories.
+                  </div>
+                </div>
+              </div>
+              <!--ACORDEON 3-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <h5 class="responsive-text" style="font-size:15px;">VTuber Design</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Creation of 2D character rigging.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 title text-center pb-4">
+            <h2 class="title-serv"> WEB <br> DEVELOPER</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!--ACORDEON 4-->
+              <div class="accordion-item py-5">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <h5 class="responsive-text" style="font-size:15px;">FRONT END</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Development of frontend code using a variety of languages and technologies to streamline and enhance the webpage
+                  </div>
+                </div>
+              </div>
+              <!--ACORDEON 5-->
+              <div class="accordion-item pb-5">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <h5 class="responsive-text" style="font-size:15px;">BACK END</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Development, processing, and storage of data in a database. Data validation and error management.
+                  </div>
+                </div>
+              </div>
+              <!--ACORDEON 6-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    <h5 class="responsive-text" style="font-size:15px;">WEB MAINTENANCE</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Maintenance, updating, and modification of the website.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 title text-center pb-4">
+            <h2 class="title-serv">DIGITALIZATION <br> PROJECTS</h2>
+            <!--ACORDEON 7-->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item py-5">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h5 class="responsive-text" style="font-size:15px;">MULTIMEDIA</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Creation of effects, interactive media, videos, and audio.
+                  </div>
+                </div>
+              </div>
+              <!--ACORDEON 8-->
+              <div class="accordion-item pb-5">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    <h5 class="responsive-text" style="font-size:15px;">MENUS QR</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Content updating such as logos, QR menu.
+                  </div>
+                </div>
+              </div>
+              <!--ACORDEON 9-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    <h5 class="responsive-text" style="font-size:15px;">BRAND </h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body h5">Building the web image of the company.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--PORTFOLIO-->
+    <section id="portfolio">
+    <div class="container-1">
+      <div class="container">
+        <h1 class="text-center py-5 title-services">PORTFOLIO</h1> 
+        <div class="row text-center">
+          <div class="col"><h2 class="text-center"> WEB</h2>
+            <a href="./webdesig.html">MORE</a>
+            <h5 class="">Development of web and mobile applications. Using Front-End tools and languages.</h5>
+            <a href="./webdesig.html"><img class="img-fluid" src="./assets/9.png" alt=""></a></div>
+          <div class="col">
+            <h2>DIGITAL DEVELOPMENT</h2>
+            <a href="./webdevelop.html" >MORE</a>
+            <h5>Development of digital products. Using programming tools and languages.</h5>
+            <a href="./webdevelop.html" ><img class="img-fluid" src="./assets/4.png"
+                alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--HOBBIE
+  <section id="hobbie">
+    <div class="container-1">
+      <div class="container">
+        <h1 class="text-center py-5 title-services">PASATIEMPOS</h1>
+        <div class="swiper mySwiper">
+          <div class="slide-hobbie swiper-wrapper pb-5">
+            <div class="swiper-slide text-center">
+              <div class="text-overlay">
+                <h1>
+                  WEBTOON
+                </h1>
+              </div>
+              <img src="./assets/webtoon.png" class="img-fluid img-hobbie m-2" alt="Imagen 1">
+            </div>
+            <div class="swiper-slide text-center">
+              <div class="text-overlay">
+                <h1>
+                  DRAWINGS
+                </h1>
+              </div>
+              <img src="./assets/draw.png" class="img-fluid img-hobbie m-2" alt="Imagen 2">
+            </div>
+            <div class="swiper-slide text-center">
+              <div class="text-overlay">
+                <h1>
+                  ESCRITURA
+                </h1>
+              </div>
+              <img src="./assets/ri_1.png" class="img-fluid img-hobbie m-2" alt="Imagen 3">
+            </div>
+            <div class="swiper-slide text-center">
+              <div class="text-overlay">
+                <h1>
+                  BLOGS
+                </h1>
+              </div>
+              <img src="./assets/blog_1.PNG" class="img-fluid img-hobbie m-2" alt="Imagen 4">
+            </div>
+            <div class="swiper-slide text-center">
+              <div class="text-overlay">
+                <h1>
+                  ANIMACIONES
+                </h1>
+              </div>
+              <img src="./assets/video.png" class="img-fluid img-hobbie m-2" alt="Imagen 5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!--CONTACT-->
+  <section id="contact">
+    <div class="container-1">
+      <div class="container py-5">
+        <h1 class="text-center py-5 title-services">CONTACT</h1>
+        <div class="row text-center">
+                      <h2>Contact me without obligations.</h2>
+                      <h5>MAIL: Ing.David.Arechiga@gmail.com</h5>
+                      <h5>PHONE: 646 198 25 17</h5>
+          <div class="col col-contact py-5">
+
+            <form action="https://formspree.io/f/mayzoppo" method="POST" class="form">
+              <div class="form-container py-2">
+                <h2 class="form-container mt-5 text-center contact-title">Contact me</h2>
+                <input type="text" class="form-input" name="name" placeholder="Nombre:">
+                <input type="email" name="email" class="form-input" placeholder="Correo:">
+                <textarea class="form-input form-input--message" name="message" placeholder="Mensaje:"></textarea>
+                <input type="submit" value="ENVIAR" class="form-cta cv my-5">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SCROLL UP-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bi bi-arrow-up scrollup__icon"></i>
+  </a>
+  <!--SCROLL REVEAL-->
+  <script src="./scrollreveal.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 1,
+      loop: true,
+      grabCursor: true,
+      watchSlidesProgress: true,
+      spaceBetween: 20,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+      },
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: true
+        // Tiempo de retraso en milisegundos antes de comenzar la reproducción automática
+      },
+    });
+
+  </script>
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!--JS-->
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+@import url('https://fonts.cdnfonts.com/css/lovintime');
+@import url('https://fonts.cdnfonts.com/css/chicken-fajitas');
+@import url('https://fonts.cdnfonts.com/css/slimbots');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h3, h4{
+    letter-spacing: .5rem;
+    color: white !important;
+}
+.nav-bar{
+    position: relative;
+    z-index: 9999;
+}
+.text-nav{
+    color: rgb(43, 86, 226) !important;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    color: white !important;
+}
+.title-services, .title-skills{
+    animation: tracking-out-contract 3s cubic-bezier(.55, .085, .68, .53) infinite reverse both;
+}
+@-webkit-keyframes tracking-out-contract {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+}
+
+@keyframes tracking-out-contract {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+}
+.cv{
+    animation: vibrate-1 .3s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0)
+    }
+
+    20% {
+        transform: translate(-2px, 2px)
+    }
+
+    40% {
+        transform: translate(-2px, -2px)
+    }
+
+    60% {
+        transform: translate(2px, 2px)
+    }
+
+    80% {
+        transform: translate(2px, -2px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+
+/*========== SCROLL UP ==========*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: rgb(29, 47, 135);
+    padding: 1rem;
+    display: flex;
+    opacity: .9;
+    z-index: 1;
+    transition: .4s;
+    color: white;
+    border-radius: 20%;
+}
+
+.scrollup:hover {
+    background-color: rgb(139, 185, 246);
+    opacity: 1;
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+}
+
+/* Show scroll */
+.show-scroll {
+    bottom: 5rem;
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 335px;
+}
+
+#idiomas button {
+    border: 0px solid transparent;
+    background-color: transparent;
+}
+#idiomas button img{
+    border-radius: 100%;
+}
+
+/*HOME*/
+.container-1{
+    padding: 0px 70px 0px 335px;
+}
+
+.title-1{
+    font-family: 'Lovintime', sans-serif;
+    font-size: 90px;
+    text-transform: none !important;
+    font-weight: 100;
+}
+.title-2{
+    font-family: 'Lovintime', sans-serif;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.home img{
+    width: 100%;
+    border-radius: 15%;
+    animation: fadeInScale 0.5s ease-in-out;
+}
+
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*ABOUT*/
+.about-col-2{
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.about img{
+    border-radius: 15px;
+}
+
+
+.col-about button{
+    width: 100%;
+    background-color: rgb(3, 25, 44);
+    border: 0 solid transparent;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.about .title{
+    background-color: rgb(0, 28, 72);
+    border-radius: 15px;
+}
+.font i{
+    font-family: 'Lovintime', sans-serif;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.font i:hover{
+    color: rgb(43, 144, 226);
+    scale: 1.1;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/*SKILL*/
+.card-skill{
+    background-color: rgb(60, 92, 141);
+    height: 200px;
+    border: 1px solid rgb(1, 37, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .5s;
+}
+.card-skill-2{
+    border-top-left-radius: 15px;
+}
+.card-skill-1{
+    border-top-right-radius: 15px;
+}
+.card-skill-3 {
+    border-bottom-left-radius: 15px;
+}
+.card-skill-4 {
+    border-bottom-right-radius: 15px;
+}
+.card-skill p{
+    margin: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.card-skill h1{
+    transition: .5s;
+    animation: logo-zoom infinite 3s;
+}
+@keyframes logo-zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-skill:hover p{
+    visibility: visible;
+    letter-spacing: .5rem;
+}
+
+.card-skill:hover{
+    background-color: rgb(18, 18, 117);
+}
+
+.card-skill:hover .fa-brands{
+    color: rgb(180, 241, 249);
+}
+.title-skills{
+    letter-spacing: .5rem;
+}
+.about-title{
+    font-weight: 500;
+}
+.skills iframe{
+    border-radius: 15px !important;
+    
+}
+
+/*======POPUP=======*/
+#popup {
+    display: none;
+    position: fixed;
+    z-index: 30;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    cursor: pointer;
+}
+
+#close-popup {
+    position: absolute;
+    font-size: 2em;
+    z-index: 100;
+    cursor: pointer;
+    background-color: white !important;
+    border-radius: 20px;
+    left: 430px;
+    top: 10px;
+}
+
+/*SERVICES*/
+.accordion-button{
+    background-color: rgb(64, 123, 190);
+    border-radius: 15px !important;
+    color: white;
+    padding: 40px !important;
+    transition: 0.5s;
+}
+.accordion-button:hover{
+    color: aquamarine;
+    background-color: rgb(38, 43, 118);
+}
+.title-services{
+    letter-spacing: .5rem;
+}
+.accordion-item{
+    background-color: transparent !important;
+    border: transparent !important;
+}
+.accordion-body{
+    background-color: rgba(20, 0, 20, .30) !important;
+    border-radius: 15px;
+    color: white !important;
+}
+/*PORTFOLIO*/
+.img-portfolio{
+    width: 90%;
+}
+.img-portfolio img{
+    border-radius: 15px;
+}
+.portfolio-img{
+    cursor: pointer;
+}
+
+
+/*BLOG*/
+.slide-hobbie img {
+    border-radius: 15px;
+}
+.swiper-slide img{
+    height: 480px;
+    width: 60%;
+    transition: 0.5s;
+}
+.text-overlay{
+    animation: Moving 0.5s infinite;
+    letter-spacing: .5rem;
+}
+
+@keyframes Moving {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+/*CONTACT*/
+.col-contact{
+    background-image: url(./assets/backs.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    min-height: 80vh;
+}
+.form-container{
+    display: grid;
+    grid-auto-columns: 100%;
+    padding: 0.2rem;
+    gap: 20px;
+}
+.form{
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea{
+    border: 0 solid transparent;
+    border-radius: 7px;
+    padding:  1em;
+}
+.form-cta{
+    border-radius: 15px !important;
+    background-color: rgb(0, 0, 0);
+    margin-top: 70px;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+}
+.form-input--message{
+    resize: none;
+}
+.contact-title{
+    font-family: 'Lovintime', sans-serif;
+    font-size: 80px !important;
+}
+.form-input--message{
+    padding: 0 !important;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+@media (max-width: 867px) {
+    .custom-navbar {
+        position: fixed;
+        width: 100%;
+        height: 95px;
+        background-color: rgb(57, 67, 84);
+    }
+
+    .nav ul {
+        width: 50%;
+        text-align: center;
+        padding: 0 !important;
+        border-radius: 15px;
+        background-color: rgb(57, 67, 84);
+        list-style: none;
+        animation: fadeInScale 0.5s ease-in-out;
+        z-index: 1000;
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    .container-1{
+        padding: 0px;
+    }
+    .accordion-content {
+        padding: 10px 0;
+    }
+    .container-1{
+        margin: 20px;
+    }
+    #idiomas{
+        padding-bottom: 15px;
+    }
+    /*HOME*/
+    .grid {
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+    } 
+
+    .title-1{
+        font-size: 60px !important;
+    }
+    .img-about{
+        padding-top: 55px !important;
+        padding: 0;
+    }
+    /*SKILLS*/
+    .card-skill-3, .card-skill-1{
+        border-radius: 0 !important;
+    }
+    .card-skill-5{
+        border-bottom-left-radius: 15px;
+    }
+    .card-skill-6{
+        border-top-right-radius: 15px;
+    }
+    #services h5{
+        font-size: 10px !important;
+    }
+    #services .h5{
+        font-size: 10px !important;
+    }
+    .accordion-item button{
+        padding: 15px !important;
+    }
+    .justify-content-center h5{
+        font-size: 15px !important;
+    }
+    .img-hobbie{
+        height: 250px !important;
+    }
+    .title-serv{
+        font-size: 17px !important;
+    }
+    .responsive-text-h{
+        font-size: 15px !important;
+    }
+    responsive-text{
+        font-size: 11px !important;
+    }
+    #scroll-up {
+        display: none !important; 
+    }
+}
